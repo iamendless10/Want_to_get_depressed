@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=UnifrakturMaguntia&display=swap");
+
+/* Tailwind Base Styles */
+
+/* 🔥 Dark & Demonic Theme */
+:root {
+  --dark: #0a000f;
+  --blood: #8b0000;
+  --ember: #ff4444;
+}
+
+/* 🔥 Body Styling */
+body {
+  background-color: var(--dark);
+  color: var(--ember);
+  font-family: "Cinzel", serif;
+}
+
+/* 🔥 Flickering Neon Text Effect */
+@keyframes flicker {
+  0% { text-shadow: 0 0 10px #ff0000, 0 0 20px #8b0000; }
+  100% { text-shadow: 0 0 15px #ff0000, 0 0 30px #8b0000; }
+}
+
+.animate-flicker {
+  animation: flicker 1.5s infinite alternate;
+}
+
+/* 🔥 Glowing Box Shadow */
+.shadow-demon {
+  box-shadow: 0px 0px 20px #ff0000;
+}
+
+/* 🔥 Gothic & Aesthetic Fonts */
+.font-gothic {
+  font-family: "UnifrakturMaguntia", cursive;
+}
+
+.font-elegant {
+  font-family: "Cinzel", serif;
+}
+
+/* 🔥 Demonic Button */
+.btn-demon {
+  background: linear-gradient(45deg, #8b0000, #ff4444);
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  box-shadow: 0px 0px 15px #ff0000;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s;
+}
+
+.btn-demon:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 25px #ff4444;
+}
+
+/* 🔥 Container Styles */
+.container-demonic {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background: rgba(10, 0, 15, 0.85);
+  border-radius: 12px;
+  box-shadow: 0px 0px 30px #8b0000;
+}
+
+/* 🔥 Input Fields */
+.input-dark {
+  background: #110011;
+  border: 1px solid #8b0000;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.input-dark:focus {
+  outline: none;
+  box-shadow: 0px 0px 10px #ff4444;
+}
